@@ -42,6 +42,7 @@ INSTALLED_APPS = [
 
     'users.apps.UsersConfig',
     'pages.apps.PagesConfig',
+    'articles.apps.ArticlesConfig',
 
 ]
 
@@ -130,4 +131,9 @@ LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-
+EMAIL_HOST = 'smtp.sendgrid.net'
+EMAIL_HOST_USER = 'apikey'
+EMAIL_HOST_PASSWORD = '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'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+TIME_ZONE = 'America/New_York'
